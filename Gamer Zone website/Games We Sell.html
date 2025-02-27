@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games We Sell</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <link rel="stylesheet" href="Games we sell.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <h2>Gamer Zone</h2>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+            <div class="primary-nav">
+                <div class="container">
+                    <a href="index.html"><img src="Assets/Logo.png" div class="Mobile-Logo"></a>
+                    <img id="mobile-cta" class="mobile-menu" src="Assets/menu.svg" alt="Open Navigation">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="Assets/exit.svg" alt="Close Navigation">
+                        <a href="index.html"><img src="Assets/Logo.png" div class="Logo"></a>
+                        <li><a href="index.html" class="Mobile-home">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Review.html">Reviews</a></li>
+                        <li><a href="Games We Sell.html">Games we sell</a></li>
+                        <li><a href="Repair.html">Consoles we repair</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    
+                        <div class="lightdarkmode">
+                            <!--Light/Dark mode-->
+                                <button onclick="myFunction()"><h5>Dark/Light mode</h5></button></button>
+                                <script>
+                                function myFunction() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                            }
+                            </script>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Hero-->
+    <section class="hero">
+        <h1>Games We Sell</h1>
+        <br>
+        <div class="wrap">
+          <div class="search">
+             <input type="text" class="searchTerm" placeholder="Search Games...">
+             <button type="submit" class="searchButton">
+               <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <br>
+
+          <div class="map-options">
+            <div class="map-options__header">
+              
+              <span class="header-text">
+                Filters
+              </span>
+              <br>
+              <br>
+              <span class="header-text">
+                Filter by Console:
+              </span>
+            </div>
+          
+              <div class="ui-grid-map-filters">
+               <div class="row">
+                 <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="coffeeshop">
+                    <label for="coffeeshop">NES</label>   
+                 </div>
+                 <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="open">
+                    <label for="open">SNES</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">N64</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">GameCube</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">Wii</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">Gameboy</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">Gameboy Colour</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">GBA</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">DS</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">PS</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">PS2</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">PS3</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">PSP</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">Xbox</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">Xbox 360</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">Sega Genesis</label>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant">Sega Saturn</label>   
+                  </div>
+                  <div class="six column wide ui checkbox map-filters__individual">
+                    <input type="checkbox" id="complimentary">
+                    <label for="complimentary">Sega Dreamcast</label>   
+                  </div>
+                </div>
+                  <br>
+                  <br>
+
+                  <span class="header-text">
+                    Filter by Genre:
+                  </span>
+
+                  <br>
+                  <br>
+
+                  <div class="ui grid map-filters">
+                    <div class="row">
+                      <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="coffeeshop">
+                         <label for="coffeeshop">Action</label>   
+                      </div>
+                      <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="open">
+                         <label for="open">RPG</label>   
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="restaurant">
+                         <label for="restaurant">Adventure</label>   
+                       </div>
+                       <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="complimentary">
+                         <label for="complimentary">Platformer</label>   
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="restaurant">
+                         <label for="restaurant">3D</label>   
+                       </div>
+                       <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="complimentary">
+                         <label for="complimentary">2D</label>   
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="restaurant">
+                         <label for="restaurant">Racing</label>   
+                       </div>
+                       <div class="six column wide ui checkbox map-filters__individual">
+                         <input type="checkbox" id="complimentary">
+                         <label for="complimentary">Puzzle</label>   
+                       </div>
+                     </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <br>
+          <br>
+
+            <div class="container-Games">
+              <h3>Recent Games</h3>
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <img src="Assets/Super_Mario_64_box_cover.jpg" class="SM64">
+                        <p>Super Mario 64</p>
+                        <br>
+                        <p><span>Console:</span> Nintendo 64</p>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <img src="Assets/Sonic-Adventure.jpg" class="Sonic-Adventure">
+                        <p>Sonic Adventure</p>
+                        <br>
+                        <p><span>Console:</span> Sega Dreamcast</p>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <img src="Assets/Pokemon Red.jpg" class="Pokemon-Red">
+                        <p>Pokemon Red</p>
+                        <br>
+                        <p><span>Console:</span> Nintendo Gameboy</p>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <img src="Assets/Persona3FES.jpg" class="P3FES">
+                        <p>Persona 3 FES</p>
+                        <br>
+                        <p><span>Console:</span> PlayStation 2</p>
+                      </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="Assets/MetroidPrimebox.jpg" class="MP">
+                    <p>Metroid Prime</p>
+                    <br>
+                    <p><span>Console:</span> Nintendo Gamecube</p>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="Assets/TwilightPrincess.jpeg" class="TP">
+                    <p>The Legend of Zelda: Twlight Princess</p>
+                    <br>
+                    <p><span>Console:</span> Nintendo Wii, Nintendo Gamecube</p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <img src="Assets/Halo Combat Evolved.jpg" class="Halo">
+                    <p>Halo: Combat Evolved</p>
+                    <br>
+                    <p><span>Console:</span> Microsoft Xbox</p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <img src="Assets/FFVII.jpg" class="FFVII">
+                    <p>Final Fantasy VII</p>
+                    <br>
+                    <p><span>Console:</span> Sony PlayStation</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Mobile Menu JS-->
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+    <!--Footer-->
+    <div class="footer">
+        <footer class="container-fluid text-center">
+        <h6>© Copyright 2022 by Gamer Zone, all rights reserved.</h6>
+        </footer>
+    </div>
+</body>
+</html>

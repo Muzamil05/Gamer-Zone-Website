@@ -1,0 +1,413 @@
+.header {
+    background-image: url("Assets/Mario\ Banner.png");
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    text-align:justify;
+    justify-content: center;
+  }
+  .header h2 {
+    position: absolute;
+    font-family: Retropix;
+    color: #2B9E44;
+    font-size: 9vh;
+    top: 5%;
+    display: flex;
+  }
+  .dark-mode {
+    background-color: #4C4C4C;
+    color: #ffffff;
+  }
+  .hero {
+    padding: 5em;
+  }
+  .container-Repair {
+    background-color: #a7a7a7;
+    padding: 2em;
+    border-radius: 15px;
+  }
+  h1 {
+    margin: 0;
+    font-family: Consolas;
+    color: #2B9E44;
+    font-size: 60px;
+    text-align: center;
+  }
+  h4 {
+    font-family: Consolas;
+    font-size: 18px;
+    color: black;
+  }
+  h3 {
+    font-family: Consolas;
+    font-size: 13px;
+    text-align: center;
+    color: black;
+    display: flex;
+  }
+  span {
+    color: #2B9E44;
+  }
+  strong {
+    font-family: Consolas;
+  }
+  p {
+    color: black;
+    font-family: Arimo;
+    font-size: 17px;
+    margin: 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 50px;
+    font-family: Retropix;
+    font-size: 3em;
+    color: #2B9E44;
+    background-color: #575757;
+  }
+a{
+    color: #2B9E44;
+    text-decoration: none;
+}
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+.Repair-Form {
+  position: relative;
+  width: 30%;
+  left: 35%;
+  text-decoration: none;
+  font-family: Consolas;
+  text-align: center;
+  font-size: 20px;
+  background-color: #bdbdbd;
+  padding: 30px;
+  border-radius: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.N64 {
+  width: 100%;
+}
+.GameCube {
+  width: 77%;
+}
+.Wii {
+  width: 40%;
+}
+.NES {
+  width: 43%;
+}
+.SNES {
+  width: 83%;
+}
+.Gameboy {
+  width: 70%;
+}
+.GBA {
+  width: 57%;
+}
+.DS {
+  width: 43%;
+}
+.PlayStation {
+  width: 70%;
+}
+.PS2 {
+  width: 36%;
+}
+.PS3 {
+  width: 65%;
+}
+.PSP {
+  width: 55%;
+}
+.Xbox {
+  width: 76%;
+}
+.Xbox360 {
+  width: 23%;
+}
+.Genesis {
+  width: 70%;
+}
+.Saturn {
+  width: 63%;
+}
+.Dreamcast {
+  width: 70%;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/*Custom Fonts used*/
+  @font-face {
+    font-family: Consolas;
+    src: url(Assets/CONSOLA.TTF);
+  }
+  
+  @font-face {
+    font-family: Retropix;
+    src: url(Assets/retropix.ttf);
+  }
+  
+  @font-face {
+    font-family: Arimo;
+    src: url(Assets/Arimo-Medium.ttf);
+  }
+  /*Desktop CSS*/
+  @media only screen and (min-width: 1445px)
+  {
+    .mobile-menu, .mobile-menu-exit
+    {
+      display: none;
+    }
+    body {
+      margin: 0;
+    }
+    /* Navbar */
+    .navbar {
+      padding: 1em;
+      display: flex;
+    }
+    .primary-nav {
+      margin: 0;
+    }
+    .Mobile-Logo {
+      display: none;
+    }
+    .Logo {
+      height: 150px;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+    }
+    .navbar nav {
+      display: flex;
+      background: none;
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
+    ul {
+      display: flex;
+      text-align: justify;
+      display: flex;
+    }
+    a {
+      text-decoration: none;
+      color: #2B9E44;
+      display: flex;
+    }
+    nav li a:hover {
+      font-weight: bold;
+    }
+    ul.primary-nav {
+      margin: 0;
+      display: flex;
+    }
+    .primary-nav {
+      display: flex;
+      font-size: 1em;
+      padding: .1em 1em;
+      margin: 0;
+      display: flex;
+    }
+    .lightdarkmode {
+      display: block;
+      font-size: 5.5em;
+      text-align: justify;
+    }
+    .container {
+      display: flex;
+    }
+    
+    li {
+      padding: 3.5em;
+      font-size: 1.3em;
+      font-family: Retropix;
+      display: flex;
+    }
+    .navbar {
+      background-color: #575757;
+      padding: 0;
+      display: flex;
+    }
+  }
+/*Mobile CSS*/
+@media only screen and (max-width: 1445px) {
+    body {
+      margin: 0;
+    }
+    /*Navbar*/  
+    .Mobile-Logo {
+      height: 200px;
+      cursor: pointer;
+    }
+    .Logo {
+      display: none;
+    }
+    .navbar {
+      background: #575757;
+      padding: 1em;
+    }
+    .navbar nav{
+      display: none;
+    }
+    .navbar .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      place-content: space-between;
+    }
+    .navbar .mobile-menu {
+      cursor: pointer;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+    }
+    section {
+      padding: 1em 1em;
+    }
+    li {
+      display: flex;
+      font-size: 1.3em;
+      justify-content: left;
+      position: relative;
+      font-family: Retropix;
+    }
+    .primary-nav {
+      width: 100%;
+      height: 100%;
+      font-size: 1em;
+      margin: 0;
+      position: relative;
+      place-content: space-between;
+    }
+    .navbar nav {
+      justify-content: left;
+    }
+    nav.menu-btn {
+      display: block;
+    }
+    nav {
+      background-color: #383737;
+      padding: 1em;
+      position: absolute;
+      z-index: 999;
+      width: 66%;
+      top: 0;
+      right: 0;
+    }
+    nav ul.primary-nav {
+      margin-top: 5em;
+    }
+    nav li a {
+      text-decoration: none;
+      display: block;
+      padding: .5em;
+      font-size: 1em;
+      text-align: right;
+      color: #2B9E44;
+    }
+    nav li a:hover {
+      font-weight: bold;
+    }
+    .mobile-menu-exit {
+      float: right;
+      margin: .5em;
+      cursor: pointer;
+    }
+    .mobile-menu {
+      margin: .5em;
+      cursor: pointer;
+    }
+    nav li a:hover {
+      font-weight: bold;
+    }
+  
+  .hero {
+    padding: 5em;
+  }
+  .container-about {
+    background-color: #a7a7a7;
+    padding: 5em;
+    border-radius: 15px;
+  }
+  h1 {
+    margin: 0;
+    font-family: Consolas;
+    color: #2B9E44;
+    font-size: 35px;
+    text-align: center;
+  }
+  p {
+    color: black;
+    font-family: Arimo;
+    font-size: 25px;
+  }
+  }
+  @media only screen and (max-width: 768px) {
+    .container-Review {
+      background-color: #a7a7a7;
+      border-radius: 15px;
+      width: 60%;
+
+    }
+    .hero {
+      padding: .5em;
+    }
+    p {
+      text-align: center;
+      color: black;
+      font-family: Arimo;
+      font-size: 15px;
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+      font-family: Consolas;
+      color: #2B9E44;
+      font-size: 40px;
+      text-align: center;
+    }
+  } 

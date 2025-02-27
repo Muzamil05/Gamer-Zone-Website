@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <link rel="stylesheet" href="Review-Form.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <h2>Gamer Zone</h2>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+            <div class="primary-nav">
+                <div class="container">
+                    <a href="index.html"><img src="Assets/Logo.png" div class="Mobile-Logo"></a>
+                    <img id="mobile-cta" class="mobile-menu" src="Assets/menu.svg" alt="Open Navigation">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="Assets/exit.svg" alt="Close Navigation">
+                        <a href="index.html"><img src="Assets/Logo.png" div class="Logo"></a>
+                        <li><a href="index.html" class="Mobile-home">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Review.html">Reviews</a></li>
+                        <li><a href="Games We Sell.html">Games we sell</a></li>
+                        <li><a href="Repair.html">Consoles we repair</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    
+                        <div class="lightdarkmode">
+                            <!--Light/Dark mode-->
+                                <button onclick="myFunction()"><h5>Dark/Light mode</h5></button>
+                                <script>
+                                function myFunction() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                            }
+                            </script>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Review Form</h1>
+        <div class="container-contact">
+            <form>
+      
+            <label for="fname"><h4>Username:</h4></label>
+            <input type="text" id="fname" name="Username" placeholder="Username">
+
+            <label for="Subject"><h4>Console:</h4></label>
+            <select id="Subject" name="Subject">
+                <option value="status">Please select one of the following-</option>
+                <option value="NES">Nintendo Entertainment System (NES)</option>
+                <option value="SNES">Super Nintendo Entertainment System (SNES)</option>
+                <option value="N64">Nintendo 64</option>
+                <option value="Gamecube">Nintendo Gamecube</option>
+                <option value="Wii">Nintendo Wii</option>
+                <option value="Gameboy">Gameboy</option>
+                <option value="Gameboy-Colour">Gameboy Colour</option>
+                <option value="Gameboy-Advanced">Gameboy Advance</option>
+                <option value="DS">Nintendo DS</option>
+                <option value="PlayStation">Playstation</option>
+                <option value="PlayStation-2">Playstation 2</option>
+                <option value="PlayStation-3">Playstation 3</option>
+                <option value="PSP">Playstation Portable (PSP)</option>
+                <option value="Xbox">Original Xbox</option>
+                <option value="Xbox 360">Xbox 360</option>
+                <option value="Genesis">Sega Genesis</option>
+                <option value="Saturn">Sega Saturn</option>
+                <option value="Dreamcast">Sega Dreamcast</option>
+            </select>
+
+            <h4>How many stars would you rate this game?</h4>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="5 star">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="4 star">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="3 star">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="3 star">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="1 star">1 star</label>
+            </div>
+            <br>
+            <br>
+            <label for="Specify"><h4>Extra Info...</h4></label>
+            <textarea id="Specify" name="Specify" placeholder="Write something..." style="height:200px"></textarea>
+
+            <input type="Submit" value="Submit"></button>
+            </form>
+        </div>
+    </div>
+   
+    <!--Mobile Menu JS-->
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+    <!--Footer-->
+    <div class="footer">
+        <footer class="container-fluid text-center">
+        <h6>© Copyright 2022 by Gamer Zone, all rights reserved.</h6>
+        </footer>
+    </div>
+</body>
+</html>

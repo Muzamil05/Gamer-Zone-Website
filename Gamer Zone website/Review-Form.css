@@ -1,0 +1,311 @@
+.header {
+    background-image: url("Assets/Mario\ Banner.png");
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    text-align:justify;
+    justify-content: center;
+  }
+  .header h2 {
+    position: absolute;
+    font-family: Retropix;
+    color: #2B9E44;
+    font-size: 9vh;
+    top: 5%;
+    display: flex;
+  }
+  .dark-mode {
+    background-color: #4C4C4C;
+    color: #ffffff;
+  }
+  .footer {
+    text-align: center;
+    padding: 50px;
+    font-family: Retropix;
+    font-size: 3em;
+    color: #2B9E44;
+    background-color: #575757;
+  }
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+input[type=submit] {
+  background-color: #2B9E44;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container-contact {
+  border-radius: 5px;
+  background-color:  #a7a7a7;
+  padding: 20px;
+}
+.hero {
+  padding: 3em;
+}
+h1 {
+  margin: 0;
+  font-family: Consolas;
+  color: #2B9E44;
+  font-size: 60px;
+  text-align: center;
+}
+p {
+  color: black;
+  font-family: Arimo;
+  font-size: 20px;
+  margin: 0;
+  display: flex;
+}
+h4 {
+  color: black;
+  font-size: 15px;
+  font-family: Arimo;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+/*Custom Fonts used*/
+  @font-face {
+    font-family: Consolas;
+    src: url(Assets/CONSOLA.TTF);
+  }
+  
+  @font-face {
+    font-family: Retropix;
+    src: url(Assets/retropix.ttf);
+  }
+  
+  @font-face {
+    font-family: Arimo;
+    src: url(Assets/Arimo-Medium.ttf);
+  }
+  /*Desktop CSS*/
+  @media only screen and (min-width: 1445px)
+  {
+    .mobile-menu, .mobile-menu-exit
+    {
+      display: none;
+    }
+    body {
+      margin: 0;
+    }
+    /* Navbar */
+    .navbar {
+      padding: 1em;
+      display: flex;
+    }
+    .primary-nav {
+      margin: 0;
+    }
+    .Mobile-Logo {
+      display: none;
+    }
+    .Logo {
+      height: 150px;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+    }
+    .navbar nav {
+      display: flex;
+      background: none;
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
+    ul {
+      display: flex;
+      text-align: justify;
+      display: flex;
+    }
+    a {
+      text-decoration: none;
+      color: #2B9E44;
+      display: flex;
+    }
+    nav li a:hover {
+      font-weight: bold;
+    }
+    ul.primary-nav {
+      margin: 0;
+      display: flex;
+    }
+    .primary-nav {
+      display: flex;
+      font-size: 1em;
+      padding: .1em 1em;
+      margin: 0;
+      display: flex;
+    }
+    .lightdarkmode {
+      display: block;
+      font-size: 5.5em;
+      text-align: justify;
+    }
+    .container {
+      display: flex;
+    }
+    
+    li {
+      padding: 3.5em;
+      font-size: 1.3em;
+      font-family: Retropix;
+      display: flex;
+    }
+    .navbar {
+      background-color: #575757;
+      padding: 0;
+      display: flex;
+    }
+  }
+/*Mobile CSS*/
+@media only screen and (max-width: 1445px) {
+    body {
+      margin: 0;
+    }
+    /*Navbar*/  
+    .Mobile-Logo {
+      height: 200px;
+      cursor: pointer;
+    }
+    .Logo {
+      display: none;
+    }
+    .navbar {
+      background: #575757;
+      padding: 1em;
+    }
+    .navbar nav{
+      display: none;
+    }
+    .navbar .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      place-content: space-between;
+    }
+    .navbar .mobile-menu {
+      cursor: pointer;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+    }
+    section {
+      padding: 1em 1em;
+    }
+    li {
+      display: flex;
+      font-size: 1.3em;
+      justify-content: left;
+      position: relative;
+      font-family: Retropix;
+    }
+    .primary-nav {
+      width: 100%;
+      height: 100%;
+      font-size: 1em;
+      margin: 0;
+      position: relative;
+      place-content: space-between;
+    }
+    .navbar nav {
+      justify-content: left;
+    }
+    nav.menu-btn {
+      display: block;
+    }
+    nav {
+      background-color: #383737;
+      padding: 1em;
+      position: absolute;
+      z-index: 999;
+      width: 66%;
+      top: 0;
+      right: 0;
+    }
+    nav ul.primary-nav {
+      margin-top: 5em;
+    }
+    nav li a {
+      text-decoration: none;
+      display: block;
+      padding: .5em;
+      font-size: 1em;
+      text-align: right;
+      color: #2B9E44;
+    }
+    nav li a:hover {
+      font-weight: bold;
+    }
+    .mobile-menu-exit {
+      float: right;
+      margin: .5em;
+      cursor: pointer;
+    }
+    .mobile-menu {
+      margin: .5em;
+      cursor: pointer;
+    }
+    nav li a:hover {
+      font-weight: bold;
+    }
+  h1 {
+    margin: 0;
+    font-family: Consolas;
+    color: #2B9E44;
+    font-size: 35px;
+    text-align: center;
+  }
+  p {
+    color: black;
+    font-family: Arimo;
+    font-size: 25px;
+  }
+  }

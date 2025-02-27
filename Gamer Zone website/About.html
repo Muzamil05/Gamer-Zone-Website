@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <link rel="stylesheet" href="About.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <h2>Gamer Zone</h2>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+            <div class="primary-nav">
+                <div class="container">
+                    <a href="index.html"><img src="Assets/Logo.png" div class="Mobile-Logo"></a>
+                    <img id="mobile-cta" class="mobile-menu" src="Assets/menu.svg" alt="Open Navigation">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="Assets/exit.svg" alt="Close Navigation">
+                        <a href="index.html"><img src="Assets/Logo.png" div class="Logo"></a>
+                        <li><a href="index.html" class="Mobile-home">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Review.html">Reviews</a></li>
+                        <li><a href="Games We Sell.html">Games we sell</a></li>
+                        <li><a href="Repair.html">Consoles we repair</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    
+                        <div class="lightdarkmode">
+                            <!--Light/Dark mode-->
+                                <button onclick="myFunction()"><h5>Dark/Light mode</h5></button></button>
+                                <script>
+                                function myFunction() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                            }
+                            </script>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Hero-->
+    <section class="hero">
+        <div class="container-about">
+            <h1>About Gamer Zone</h1>
+            <br>
+            <p>Gamer Zone is a retro-game store startup business where we sell retro video games and consoles that date back to the Nintendo Entertainment System from 1985 all the way to the Sony Playstation 3 from 2006. In addition from selling games and consoles from this era we also accept retro console repairs and will repair these systems with our team of 3 staff.</p>
+            <br>
+            <p>Here at Gamer Zone we love retro games and their community, and this website will not only allow our customers to browse some of the selection of games we sell or to submit a repair for a console, but this website allows us to build a community through being able to write reviews of your favourite retro games. Not only will this allow people to share their favourite games but it will help build a community and will allow people to experience games from the past that may not get as much attention today. A lot of games and genres have faded over time however with having reviews on this website, people may end up trying out games they may have not known exsisted.</p>
+            <br>
+            <div class="ul-section">
+                <ul>-We Sell Retro Games</ul>
+                <ul>-We repair your broken Retro Consoles</ul>
+                <ul>-Leave us Reviews of your favourite games!</ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Mobile Menu JS-->
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+    <!--Footer-->
+    <div class="footer">
+        <footer class="container-fluid text-center">
+        <h6>© Copyright 2022 by Gamer Zone, all rights reserved.</h6>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <h2>Gamer Zone</h2>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+            <div class="primary-nav">
+                <div class="container">
+                    <a href="index.html"><img src="Assets/Logo.png" div class="Mobile-Logo"></a>
+                    <img id="mobile-cta" class="mobile-menu" src="Assets/menu.svg" alt="Open Navigation">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="Assets/exit.svg" alt="Close Navigation">
+                        <a href="index.html"><img src="Assets/Logo.png" div class="Logo"></a>
+                        <li><a href="index.html" class="Mobile-home">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Review.html">Reviews</a></li>
+                        <li><a href="Games We Sell.html">Games we sell</a></li>
+                        <li><a href="Repair.html">Consoles we repair</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    
+                        <div class="lightdarkmode">
+                            <!--Light/Dark mode-->
+                                <button onclick="myFunction()"><h5>Dark/Light mode</h5></button></button>
+                                <script>
+                                function myFunction() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                            }
+                            </script>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Contact</h1>
+        <p>Please feel free to contact us for any enquiries you may have, such as how to apply for Console repairs, the status of your repair and any other questions you may have. Our team will try and look into your request as soon as possible.</p>
+        <div class="container-contact">
+            <form>
+      
+            <label for="fname"><h4>First Name:</h4></label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      
+            <label for="lname"><h4>Last Name:</h4></label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+            <label for="E-Adress"><h4>Email Adress:</h4></label>
+            <input type="text" id="E-Adress" name="Email-Adress" placeholder="Your Email Adress...">
+      
+            <label for="Subject"><h4>Subject:</h4></label>
+            <select id="Subject" name="Subject">
+                <option value="status">Please select one of the following-</option>
+                <option value="status">Console repair status</option>
+                <option value="Console Repair Application">How to apply for a console repair</option>
+                <option value="GameStock">Game Stock</option>
+                <option value="Report">Report innapropriate user comment or review</option>
+                <option value="Other">Other</option>
+            </select>
+      
+            <label for="Specify"><h4>Specify...</h4></label>
+            <textarea id="Specify" name="Specify" placeholder="Write something..." style="height:200px"></textarea>
+
+            <input type="Submit" value="Submit"></button>
+            </form>
+        </div>
+    </div>
+   
+    <!--Mobile Menu JS-->
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+    <!--Footer-->
+    <div class="footer">
+        <footer class="container-fluid text-center">
+        <h6>© Copyright 2022 by Gamer Zone, all rights reserved.</h6>
+        </footer>
+    </div>
+</body>
+</html>

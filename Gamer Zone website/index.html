@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gaming, Gamer Zone, Retro Games, Retro Gaming, Repair Retro Games Console, Retro Game Reviews, Game Reviews, Old Nintendo Games, Old Video Games">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <h2>Gamer Zone</h2>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+            <div class="primary-nav">
+                <div class="container">
+                    <a href="index.html"><img src="Assets/Logo.png" div class="Mobile-Logo"></a>
+                    <img id="mobile-cta" class="mobile-menu" src="Assets/menu.svg" alt="Open Navigation">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="Assets/exit.svg" alt="Close Navigation">
+                        <a href="index.html"><img src="Assets/Logo.png" div class="Logo"></a>
+                        <li><a href="index.html" class="Mobile-home">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Review.html">Reviews</a></li>
+                        <li><a href="Games We Sell.html">Games we sell</a></li>
+                        <li><a href="Repair.html">Consoles we repair</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    
+                        <div class="lightdarkmode">
+                            <!--Light/Dark mode-->
+                                <button onclick="myFunction()"><h5>Dark/Light mode</h5></button></button>
+                                <script>
+                                function myFunction() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                            }
+                            </script>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Hero-->
+    <section class="hero">
+        <div class="background-container"></div>
+            <h1>The Best place for Retro Games!</h1>
+        <div class="Gamestore"></div>
+        
+    </section>
+
+    <!--Game reviews-->
+    <section class="Review">
+            <h3>Recent Game Reviews</h3>
+            <div class="container-review">
+                <div class="board">
+                    <div class="swiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper">
+
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">Slide 1</div>
+                                  <div class="swiper-slide">Slide 2</div>
+                                  <div class="swiper-slide">Slide 3</div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                              
+                                <div class="swiper-scrollbar"></div>
+                              </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="flex">
+                                <div class="comments">
+                                    <img src="Assets/Super_Mario_64_box_cover.jpg" class="Mario64">
+                                    <h4><span>Game:</span> Super Mario 64</h4>
+                                    <h4><span>Console:</span> Nintendo 64</h4>
+                                    <p>I grew up playing the original Super Mario 64 at a friends house and this game has a very special place in my heart. All of the levels are timeless-classics and This game set the formular for not only Mario games in the future, but also for every game that has come out since then.</p>
+                                </div>
+                                <div class="profile">
+                                    <img src="Assets/Profile Picture.webp">
+                                    <a>Eclipse 599</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex">
+                                <div class="comments">
+                                    <img src="Assets/Sonic-Adventure.jpg" class="Sonic-Adventure">
+                                    <h4><span>Game:</span> Sonic Adventure</h4>
+                                    <h4><span>Console:</span> Sega Dreamcast</h4>
+                                    <p>Most modern Sonic games have mostly been a miss, Sonic adventure is a fantastic game. With the franchises first attempt into 3D they nailed this game. Being able to play as different characters is awesome and all of the levels are really great.</p>
+                                 </div>
+                                <div class="profile">
+                                    <img src="Assets/Profile Picture.webp">
+                                    <a>DreamcastGuy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex">
+                                <div class="comments">
+                                    <img src="Assets/Pokemon Red.jpg" class="Pokemon-Red">
+                                    <h4><span>Game:</span> Pokemon Red</h4>
+                                    <h4><span>Console:</span> Nintendo Gameboy</h4>
+                                    <p>Whilst I am not into modern Pokemon titles, and these games havent aged the best. I still enjoy playing this game due to the very special place it has in my heart. Trading Pokemon with friends and battling with them is a feeling that I cant really see in modern Pokemon games.</p>
+                                </div>
+                                <div class="profile">
+                                    <img src="Assets/Profile Picture.webp">
+                                    <a>Alex Bellas</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                
+                    </div>
+        
+                </div>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    </section>
+    
+    <!--Mobile Menu JS-->
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+    <!--Footer-->
+    <div class="footer">
+        <footer class="container-fluid text-center">
+        <h6>© Copyright 2022 by Gamer Zone, all rights reserved.</h6>
+        </footer>
+    </div>
+
+    <script src="Swiper.js"></script>
+</body>
+</html>

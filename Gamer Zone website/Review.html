@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <link rel="stylesheet" href="Review.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <h2>Gamer Zone</h2>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+            <div class="primary-nav">
+                <div class="container">
+                    <a href="index.html"><img src="Assets/Logo.png" div class="Mobile-Logo"></a>
+                    <img id="mobile-cta" class="mobile-menu" src="Assets/menu.svg" alt="Open Navigation">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="Assets/exit.svg" alt="Close Navigation">
+                        <a href="index.html"><img src="Assets/Logo.png" div class="Logo"></a>
+                        <li><a href="index.html" class="Mobile-home">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Review.html">Reviews</a></li>
+                        <li><a href="Games We Sell.html">Games we sell</a></li>
+                        <li><a href="Repair.html">Consoles we repair</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    
+                        <div class="lightdarkmode">
+                            <!--Light/Dark mode-->
+                                <button onclick="myFunction()"><h5>Dark/Light mode</h5></button></button>
+                                <script>
+                                function myFunction() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                            }
+                            </script>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Hero-->
+    <section class="hero">
+        <h1>Game Reviews</h1>
+        <br>
+
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="Search Reviews...">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <br>
+        <div class="Review-Form">
+            <a href="Review Form.html">Click here to Write a review...</a>
+        </div>
+         </div>
+            <div class="container-Review">
+                <h3>Recent Reviews</h3>
+                <!--Testimonials------------------->
+        <section id="testimonials">
+            <!--testimonials-box-container------>
+            <div class="testimonial-box-container">
+                <!--BOX-1-------------->
+                <div class="testimonial-box-M64">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Eclipse 599</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/Super_Mario_64_box_cover.jpg" class="Mario64">
+                    <div class="rate-m64">
+                        <label for="star4" title="">4 stars</label>
+                        <label for="star3" title="">3 stars</label>
+                        <label for="star2" title="">2 stars</label>
+                        <label for="star1" title="">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> Super Mario 64</h4>
+                        <h4><span>Console:</span> Nintendo 64</h4>
+                        <p>I grew up playing the original Super Mario 64 at a friends house and this game has a very special place in my heart. All of the levels are timeless-classics and This game set the formular for not only Mario games in the future, but also for every game that has come out since then.</p>
+                    </div>
+                </div>
+                <!--BOX-2-------------->
+                <div class="testimonial-box-Sonic">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>DreamcastGuy</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/Sonic-Adventure.jpg" class="Sonic-Adventure">
+                    <div class="rate-Sonic">
+                        <label for="star3" title="text">3 stars</label>
+                        <label for="star2" title="text">2 stars</label>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> Sonic Adventure</h4>
+                        <h4><span>Console:</span> Sega Dreamcast</h4>
+                        <p>Most modern Sonic games have mostly been a miss, Sonic adventure is a fantastic game. With the franchises first attempt into 3D they nailed this game. Being able to play as different characters is awesome and all of the levels are really great. I'm glad that now with the release of Sonic Frontiers, Sega has finally figured out what to do with modern Sonic, however this game will always be the best Sonic game for me that has been released.</p>
+                    </div>
+                </div>
+                <!--BOX-3-------------->
+                <div class="testimonial-box-Pokemon">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Alex Bellas</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/Pokemon Red.jpg" class="Pokemon-Red">
+                    <div class="rate-Pokemon">
+                        <label for="star3" title="text">3 stars</label>
+                        <label for="star2" title="text">2 stars</label>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> Pokemon Red</h4>
+                        <h4><span>Console:</span> Nintendo Gameboy</h4>
+                        <p>Whilst I am not into modern Pokemon titles, and these games havent aged the best. I still enjoy playing this game due to the very special place it has in my heart. Trading Pokemon with friends and battling with them is a feeling that I cant really see in modern Pokemon games.</p>
+                    </div>
+                </div>
+                <!--BOX-4-------------->
+                <div class="testimonial-box-P3">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Oliva</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/Persona3FES.jpg" class="P3FES">
+                    <div class="rate-P3">
+                        <label for="star4" title="text">4 stars</label>
+                        <label for="star3" title="text">3 stars</label>
+                        <label for="star2" title="text">2 stars</label>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> Persona 3 FES</h4>
+                        <h4><span>Console:</span>Sony Playstation 2</h4>
+                        <p>One of the best RPG's on the playstation 2, Persona 3 FES the mix of a social game along with an RPG mechanic is fantastic and the setting was great. The game has a really great soundtrack and really changed the Persona series to what it is today. The extra content was interesting and I love the high-school environment.</p>
+                    </div>
+                </div>
+    </section>
+
+            
+        <section id="testimonials">
+            <!--testimonials-box-container------>
+            <div class="testimonial-box-container">
+                <!--BOX-5-------------->
+                <div class="testimonial-box-Metroid">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>ItsmeZack</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/MetroidPrimebox.jpg" class="Metroid-Prime">
+                    <div class="rate-MP">
+                        <label for="star5" title="text">5 stars</label>
+                        <label for="star4" title="text">4 stars</label>
+                        <label for="star3" title="text">3 stars</label>
+                        <label for="star2" title="text">2 stars</label>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> Metroid Prime</h4>
+                        <h4><span>Console:</span> Nintendo Gamecube</h4>
+                        <p>One of the greatest games of all time, this game has you exploring as the great bounty hunter Samus in a beutifully made environment. The abilities and controls are great and the secrets feel very rewarding.</p>
+                    </div>
+                </div>
+                <!--BOX-6-------------->
+                <div class="testimonial-box-TP">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>ZeldaFan 520</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/TwilightPrincess.jpeg" class="Twilight-Princess">
+                    <div class="rate-TP">
+                        <label for="star4" title="text">4 stars</label>
+                        <label for="star3" title="text">3 stars</label>
+                        <label for="star2" title="text">2 stars</label>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> The Legend of Zelda: Twilight Princess</h4>
+                        <h4><span>Console:</span> Nintendo Wii, Nintendo Gamecube</h4>
+                        <p>After the Legend of Zelda: The Wind Waker had a more cartoony artstyle everyone was looking forward to seeing the return of a dark Zelda game since Majoras Mask. And this game delivered. Releasing the same day as the Nintendo Wii the dungeons in this game are fantastic and the wolf-Link mechanic is really cool.</p>
+                    </div>
+                </div>
+                <!--BOX-7-------------->
+                <div class="testimonial-box-Halo">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>MicrosoftGamer52</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/Halo Combat Evolved.jpg" class="Halo">
+                    <div class="rate-Halo">
+                        <label for="star3" title="text">3 stars</label>
+                        <label for="star2" title="text">2 stars</label>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> Halo: Combat Evolved</h4>
+                        <h4><span>Console:</span> Microsoft Xbox</h4>
+                        <p>still a great game all these years later the missions great the multiplayer great the music GREAT. this game still holds up some of my favorite things about this halo game is how open the maps feel and how every single level is different and is special in its own way. And don't even get me started on the multiplayer simple but fun. AND THE MUSIC the music is perfect for the kind of the game that it is it makes every amazing moment even more special and epic.</p>
+                    </div>
+                </div>
+                <!--BOX-8-------------->
+                <div class="testimonial-box-FFVII">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="Assets/Profile Picture.webp" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Oliva</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="Assets/FFVII.jpg" class="FFVII">
+                    <div class="rate-FFVII">
+                        <label for="star5" title="text">5 stars</label>
+                        <label for="star4" title="text">4 stars</label>
+                        <label for="star3" title="text">3 stars</label>
+                        <label for="star2" title="text">2 stars</label>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <h4><span>Game:</span> Final Fantasy VII</h4>
+                        <h4><span>Console:</span> Sony PlayStation</h4>
+                        <p>Final Fantasy VII is an experience that everyone should try at least once. I have played through it a few times and I can say that this game truly deserves a medal. I honestly believe that it is the best game that has ever been made.</p>
+                    </div>
+                </div>
+    </section>
+</section>
+
+    <!--Mobile Menu JS-->
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+    <!--Footer-->
+    <div class="footer">
+        <footer class="container-fluid text-center">
+        <h6>© Copyright 2022 by Gamer Zone, all rights reserved.</h6>
+        </footer>
+    </div>
+</body>
+</html>
