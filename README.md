@@ -17,4 +17,4 @@
 ![Contact Us](Screenshots/Contact%20us.png)
 
 ## 📚 Assignment Documentation
-![📄 View Documentation](Documentation/Muzamil%20Nayani%20-%20Unit%2006_15%20Assignment%202%20Report.pdf)
+![View Documentation](Documentation/Muzamil%20Nayani%20-%20Unit%2006_15%20Assignment%202%20Report.pdf)
